@@ -1,0 +1,2 @@
+# GoogleTrendsViewer
+Created with CodeSandbox
