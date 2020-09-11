@@ -20,10 +20,12 @@
       type="text/css"
     />
 
+
     <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/custom.css">
     <script
       type="text/javascript"
       src="https://ssl.gstatic.com/trends_nrtr/2213_RC01/embed_loader.js"
@@ -36,17 +38,174 @@
     <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="container">
-      <div class="row">
+      
+      <div class="row ">
         <div class="one-half column" style="margin-top: 25%;">
-          <h4>Google Trends</h4>
-          <p>
-            Plain n Simple
-          </p>
+          <h1>Google Trends</h4>
+        </div>
+      </div>
+
+      <h2 class="categories">
+          Worldwide trends
+      </h2>
+      <div class="row">
+        <div class="one-half column">
+          <p>30 day period topics</p>
+          <script type="text/javascript">
+            trends.embed.renderExploreWidget(
+              "RELATED_TOPICS",
+              {
+                comparisonItem: [{ geo: "", time: "today 1-m" }],
+                category: 0,
+                property: ""
+              },
+              {
+                exploreQuery: "date=today%201-m",
+                guestPath: "https://trends.google.com:443/trends/embed/"
+              }
+            );
+          </script>
+        </div>
+
+        <div class="one-half column">
+          <p>30 day period queries</p>
+          <script type="text/javascript">
+            trends.embed.renderExploreWidget(
+              "RELATED_QUERIES",
+              {
+                comparisonItem: [{ geo: "", time: "today 1-m" }],
+                category: 0,
+                property: ""
+              },
+              {
+                exploreQuery: "date=today%201-m",
+                guestPath: "https://trends.google.com:443/trends/embed/"
+              }
+            );
+          </script>
         </div>
       </div>
 
       <div class="row">
         <div class="one-half column">
+          <p>90 day period topics</p>
+          <script type="text/javascript">
+            trends.embed.renderExploreWidget(
+              "RELATED_TOPICS",
+              {
+                comparisonItem: [{ geo: "", time: "today 3-m" }],
+                category: 0,
+                property: ""
+              },
+              {
+                exploreQuery: "date=today%203-m",
+                guestPath: "https://trends.google.com:443/trends/embed/"
+              }
+            );
+          </script>
+        </div>
+
+        <div class="one-half column">
+          <p>90 day period queries</p>
+          <script type="text/javascript">
+            trends.embed.renderExploreWidget(
+              "RELATED_QUERIES",
+              {
+                comparisonItem: [{ geo: "", time: "today 3-m" }],
+                category: 0,
+                property: ""
+              },
+              {
+                exploreQuery: "date=today%203-m",
+                guestPath: "https://trends.google.com:443/trends/embed/"
+              }
+            );
+          </script>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="one-half column">
+          <p>1 Year period topics</p>
+          <script type="text/javascript">
+            trends.embed.renderExploreWidget(
+              "RELATED_TOPICS",
+              {
+                comparisonItem: [{ geo: "", time: "today 12-m" }],
+                category: 0,
+                property: ""
+              },
+              {
+                exploreQuery: "date=today%205-y",
+                guestPath: "https://trends.google.com:443/trends/embed/"
+              }
+            );
+          </script>
+        </div>
+
+        <div class="one-half column">
+          <p>1 Year period queries</p>
+          <script type="text/javascript">
+            trends.embed.renderExploreWidget(
+              "RELATED_QUERIES",
+              {
+                comparisonItem: [{ geo: "", time: "today 12-m" }],
+                category: 0,
+                property: ""
+              },
+              {
+                exploreQuery: "date=today%205-y",
+                guestPath: "https://trends.google.com:443/trends/embed/"
+              }
+            );
+          </script>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="one-half column">
+          <p>5 Year period topics</p>
+          <script type="text/javascript">
+            trends.embed.renderExploreWidget(
+              "RELATED_TOPICS",
+              {
+                comparisonItem: [{ geo: "", time: "today 5-y" }],
+                category: 0,
+                property: ""
+              },
+              {
+                exploreQuery: "date=today%205-y",
+                guestPath: "https://trends.google.com:443/trends/embed/"
+              }
+            );
+          </script>
+        </div>
+
+        <div class="one-half column">
+          <p>5 Year period queries</p>
+          <script type="text/javascript">
+            trends.embed.renderExploreWidget(
+              "RELATED_QUERIES",
+              {
+                comparisonItem: [{ geo: "", time: "today 5-y" }],
+                category: 0,
+                property: ""
+              },
+              {
+                exploreQuery: "date=today%205-y",
+                guestPath: "https://trends.google.com:443/trends/embed/"
+              }
+            );
+          </script>
+        </div>
+      </div>
+    </div> 
+ 
+    <div class="container">
+      <h2 class="categories"> By Country daily trends </h2>       
+      <div class="row">
+        <div class="one-half column">
+             
           <p>U.S</p>
           <script type="text/javascript">
             trends.embed.renderWidget("dailytrends", "", {
@@ -78,7 +237,8 @@
           </script>
         </div>
       </div>
-    </div>
+    </div> 
+  </div>
 
     <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
